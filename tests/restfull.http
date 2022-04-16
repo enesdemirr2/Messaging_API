@@ -1,0 +1,111 @@
+@BASE_URL = http://localhost:3000/api/
+
+GET {{BASE_URL}}
+
+###
+
+GET  {{BASE_URL}}login
+
+###
+
+POST {{BASE_URL}}login-post
+Content-Type: application/json
+
+{
+    "email" : "eness@mail.com",
+    "password" : "admin123"
+}
+
+
+###
+
+POST {{BASE_URL}}check-auth
+
+
+###
+POST {{BASE_URL}}logout
+
+###
+GET {{BASE_URL}}register
+
+###
+POST {{BASE_URL}}register-post
+Content-Type: application/json
+
+{
+    "username" : "selmanjir", 
+    "name" : "Selman Jir CAN",
+    "email" : "selman@mail.com",
+    "password" : "admin123",
+    "repassword" : "admin123",
+    "role" : "user"
+}
+
+###
+GET {{BASE_URL}}send-message
+
+###
+POST {{BASE_URL}}send-message-to/abdulskaya
+Content-Type: application/json
+
+{
+    "message" : "Selam Selman2"
+}
+
+###
+
+GET {{BASE_URL}}get-message
+
+
+###
+GET {{BASE_URL}}messages-content/abdulskaya
+
+
+###
+
+GET {{BASE_URL}}block-user/selmanjir
+
+###
+
+GET {{BASE_URL}}is-it-blocked/abdulskaya
+
+###
+
+GET {{BASE_URL}}unblock-user/abdulskaya
+
+###
+
+GET {{BASE_URL}}blocked-list
+
+
+###
+
+GET {{BASE_URL}}delete-message/14
+
+
+###
+
+
+
+
+
+
+
+
+
+
+###
+
+PATCH  {{BASE_URL}}user/10
+Content-Type:  application/json
+
+{
+    "name": "dasemre2",
+    "username" : "emrealtusdanbilek2"
+}
+
+###
+
+DELETE {{BASE_URL}}user/6
+Content-Type:  application/json
+
